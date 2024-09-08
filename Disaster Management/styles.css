@@ -1,0 +1,291 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* Fullscreen Hero Section with Slider */
+.hero {
+    position: relative;
+    height: 580px; /* Full viewport height */
+    width: 100vw;  /* Full viewport width */
+    overflow: hidden;
+}
+
+.slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.slide.active {
+    display: block;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide-text {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.slide-text h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.slide-text p {
+    font-size: 20px;
+}
+
+/* Adjusting Header */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #ddd;
+}
+
+.donate-btn {
+    background-color: #ff4b5c;
+    color: white;
+    border-radius: 5px;
+}
+
+.donate-btn:hover {
+    background-color: #ff1c2e;
+}
+
+/* News Section */
+.news-section {
+    padding: 50px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.news-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.news-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.news-card {
+    background-color: white;
+    width: 30%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.news-card img {
+    width: 100%;
+    border-radius: 8px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.news-card h3 {
+    font-size: 24px;
+    margin: 15px 0;
+}
+
+.news-card p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.news-card a {
+    font-size: 16px;
+    color: #ff4b5c;
+    text-decoration: none;
+}
+
+.news-card:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+/* Government Operations Section */
+.gov-operations {
+    padding: 50px;
+    background-color: #eaeaea;
+    text-align: center;
+}
+
+.gov-operations h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.gov-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gov-card {
+    background-color: white;
+    width: 30%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.gov-card img {
+    width: 100%;
+    border-radius: 8px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.gov-card h3 {
+    font-size: 24px;
+    margin: 15px 0;
+}
+
+.gov-card p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.gov-card:hover {
+    transform: scale(1.05);
+}
+/* Recovery Area Updates Section */
+.recovery-updates {
+    padding: 50px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.recovery-updates h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.recovery-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.recovery-card {
+    background-color: white;
+    width: 30%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.recovery-card img {
+    width: 100%;
+    border-radius: 8px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.recovery-card h3 {
+    font-size: 24px;
+    margin: 15px 0;
+}
+
+.recovery-card p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.recovery-card:hover {
+    transform: scale(1.05);
+}
